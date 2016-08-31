@@ -19,6 +19,7 @@ public:
     int whether_host = 0;         //0 not host, 1 is host
     QVector< QVector<int> > status;
     QString input_up;
+    ~chesslogic();
 protected:
 private:
     const int each_width = 30;       //每个格子边长

@@ -103,3 +103,8 @@ void chessboard::fresh_dangerous(bool temp)
         update();
     }
 }
+chessboard::~chessboard()
+{
+    delete chess_logic;
+    delete picture;
+}

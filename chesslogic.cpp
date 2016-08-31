@@ -435,3 +435,15 @@ void chesslogic::reac_disconnect()
         delete server;
     }
 }
+
+chesslogic::~chesslogic()
+{
+    if(whether_host == 0)
+    {
+        delete client;
+    }
+    else if(whether_host == 1)
+    {
+        delete server;
+    }
+}

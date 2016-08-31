@@ -16,6 +16,7 @@ public:
     const int each_width = 30;       //每个格子宽度
     chesslogic *chess_logic;
     int dangerous_flag = 0;        //1 画， 0 不画
+    ~chessboard();
 protected:
     void paintEvent(QPaintEvent *ev);
     void mousePressEvent(QMouseEvent *ev);
